@@ -1,0 +1,59 @@
+/* General Reset and Styling */
+
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin-top: 50px;
+    border-collapse: collapse; /* Makes table borders collapse into a single border */
+    background-color:  #f1fef4;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around table */
+}
+
+/* Table Headers */
+th {
+    text-align: left;
+    padding: 12px;
+    font-weight: 600;
+    color: #4a4a4a;
+    background-color:  #00897b ; /* Light grey background for header */
+    border-bottom: 2px solid #ddd; /* Stronger border for header row */
+}
+
+/* Table Data */
+td {
+    font-weight: 500;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-style: italic;
+    vertical-align: middle;
+}
+
+/* Styling for Hover Effects on Rows */
+tbody tr:hover {
+    background-color: #f9fafb; /* Light blue-grey background on hover */
+    cursor: pointer;
+}
+
+
+
+td:nth-child(1) {
+    font-weight: bold; /* Make the first column stand out */
+}
+
+/* Table responsiveness */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td[colspan="2"] {
+        font-size: 14px;
+    }
+}
